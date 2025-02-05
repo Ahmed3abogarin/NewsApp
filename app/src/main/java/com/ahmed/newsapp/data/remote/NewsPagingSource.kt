@@ -9,7 +9,7 @@ class NewsPagingSource(
     private val source: String,
 ) : PagingSource<Int, Article>() {
 
-    // Detrimne when we should stop the paging
+    // Determine when we should stop the paging
     private var totalNewsCount = 0
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Article> {

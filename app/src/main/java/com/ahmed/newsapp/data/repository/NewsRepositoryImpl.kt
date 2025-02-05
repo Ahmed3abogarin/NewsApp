@@ -10,7 +10,6 @@ import com.ahmed.newsapp.data.remote.NewsApi
 import com.ahmed.newsapp.data.remote.NewsPagingSource
 import com.ahmed.newsapp.data.remote.SearchPagingSource
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.onEach
 
 class NewsRepositoryImpl(
     private val newsApi: NewsApi,

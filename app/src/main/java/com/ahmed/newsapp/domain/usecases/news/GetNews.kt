@@ -3,7 +3,6 @@ package com.ahmed.newsapp.domain.usecases.news
 import androidx.paging.PagingData
 import com.ahmed.newsapp.domain.model.Article
 import com.ahmed.newsapp.domain.repository.NewsRepository
-import com.ahmed.newsapp.data.remote.NewsApi
 import kotlinx.coroutines.flow.Flow
 
 class GetNews (
