@@ -84,17 +84,17 @@ fun NewsNavigatorScreen() {
                     selected = selectedItem,
                     onItemClicked = { index ->
                         when (index) {
-                            0 -> navigateToTan(
+                            0 -> navigateToTab(
                                 navController = navController,
                                 route = Route.HomeScreen.route
                             )
 
-                            1 -> navigateToTan(
+                            1 -> navigateToTab(
                                 navController = navController,
                                 route = Route.SearchScreen.route
                             )
 
-                            2 -> navigateToTan(
+                            2 -> navigateToTab(
                                 navController = navController,
                                 route = Route.BookmarkScreen.route
                             )
@@ -123,7 +123,7 @@ fun NewsNavigatorScreen() {
                 HomeScreen(
                     articles = articles,
                     navigateToSearch = {
-                        navigateToTan(
+                        navigateToTab(
                             navController = navController,
                             route = Route.SearchScreen.route
                         )
@@ -184,7 +184,7 @@ fun NewsNavigatorScreen() {
 
 }
 
-fun navigateToTan(navController: NavController, route: String) {
+fun navigateToTab(navController: NavController, route: String) {
     navController.navigate(route) {
         // every time we navigate to tab we wanna pop the backstack until we reach the home screen
         navController.graph.startDestinationRoute?.let { homeScreen ->

@@ -39,4 +39,5 @@ private val Context.datastore: DataStore<Preferences> by preferencesDataStore(na
 // store preference we also need thing called (Preference keys)
 private object PreferencesKeys{
     val APP_KEY = booleanPreferencesKey(Constants.APP_ENTRY)
+
 }

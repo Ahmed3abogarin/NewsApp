@@ -20,7 +20,7 @@ class NewsPagingSource(
             val newsResponse = newsApi.getNews(page = page, sources = source)
             totalNewsCount += newsResponse.articles.size
             val articles =
-                newsResponse.articles.distinctBy { it.title } // to remove any duplicate articles because sometimes the api returns duplicate articatles
+                newsResponse.articles.distinctBy { it.title } // to remove any duplicate articles because sometimes the api returns duplicate articles
             LoadResult.Page(
                 data = articles,
                 nextKey = if (totalNewsCount == newsResponse.totalResults) null else page + 1 // if it's null the paging will stop loading new result or make new API calls that's why we need the "totalNewsCount"

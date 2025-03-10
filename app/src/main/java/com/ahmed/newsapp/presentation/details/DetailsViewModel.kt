@@ -28,8 +28,6 @@ class DetailsViewModel @Inject constructor(
             when (event) {
                 is DetailsEvent.UpsertDeleteArticle -> {
                     CoroutineScope(Dispatchers.IO).launch {
-
-
                         val article = newsUseCases.selectArticle(url = event.article.url)
                         if (article == null) {
                             // if it null we need to insert it
@@ -40,8 +38,6 @@ class DetailsViewModel @Inject constructor(
 
                     }
                 }
-
-
                 is DetailsEvent.RemoveSideEffect -> {
                     sideEffect = null
                 }

@@ -63,7 +63,6 @@ fun ArticleList(
                     ArticleCard(article = it, onClick = { onClick(it) })
                 }
             }
-
         }
     }
 
