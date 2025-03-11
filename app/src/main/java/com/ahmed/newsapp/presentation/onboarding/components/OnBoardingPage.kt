@@ -17,8 +17,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import com.ahmed.newsapp.R
 import com.ahmed.newsapp.presentation.onboarding.Page
-import com.ahmed.newsapp.util.Constants.MediumPadding1
-import com.ahmed.newsapp.util.Constants.MediumPadding2
+import com.ahmed.newsapp.util.Dimens.MediumPadding1
+import com.ahmed.newsapp.util.Dimens.MediumPadding2
 
 @Composable
 fun OnBoardingPage(

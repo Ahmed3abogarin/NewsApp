@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import com.ahmed.newsapp.ui.theme.BlueGray
-import com.ahmed.newsapp.util.Constants.IndicatorSize
+import com.ahmed.newsapp.util.Dimens.IndicatorSize
 
 @Composable
 fun PageIndicator(

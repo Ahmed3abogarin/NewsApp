@@ -23,7 +23,7 @@ import com.ahmed.newsapp.presentation.common.NewsBackButton
 import com.ahmed.newsapp.presentation.common.NewsButton
 import com.ahmed.newsapp.presentation.onboarding.components.OnBoardingPage
 import com.ahmed.newsapp.presentation.onboarding.components.PageIndicator
-import com.ahmed.newsapp.util.Constants.MediumPadding2
+import com.ahmed.newsapp.util.Dimens.MediumPadding2
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)
