@@ -18,6 +18,7 @@ class MainActivity : ComponentActivity() {
         installSplashScreen()
         setContent {
             NewsAppTheme {
+
                 OnBoardingScreen(onEvent = {})
             }
         }

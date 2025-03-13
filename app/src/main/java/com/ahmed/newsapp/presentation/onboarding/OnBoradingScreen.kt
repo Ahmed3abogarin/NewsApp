@@ -40,12 +40,16 @@ fun OnBoardingScreen(
 
         val buttonState = remember {
             derivedStateOf {
+
+
                 when (pagerState.currentPage) {
                     0 -> listOf("", "Next")
                     1 -> listOf("Back", "Next")
                     2 -> listOf("", "Get Stated")
                     else -> listOf("", "")
                 }
+
+
             }
         }
         HorizontalPager(state = pagerState) { index ->
